@@ -21,7 +21,10 @@
     "paths": {
       "@app/*": ["app/*"],
       "@assets/*":["assets/*"],
-      "@landing/*": ["app/landing-page/*"]
+      "@landing/*": ["app/landing-page/*"],
+      "@dashboard/*": ["app/dashboard/*"],
+      "@models/*": ["app/models/*"],
+      "@services/*" : ["app/services/*"]
     }
   },
   "angularCompilerOptions": {
