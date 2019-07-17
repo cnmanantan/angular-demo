@@ -1,0 +1,57 @@
+.mat-table{
+  margin: 20px auto;
+}
+
+.mat-header-row{
+  .mat-header-cell{
+    text-align: center;
+  }
+}
+
+.cdk-column-title{
+  padding: 0px 0px 0px 25px;
+}
+
+.cdk-column-image{
+  padding: 5px;
+  img{
+    max-width: 50px;
+  }
+}
+
+.cdk-column-title h2{
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.cdk-column-type{
+  padding: 0 20px;
+}
+
+.mat-cell p{
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cdk-column-author, .cdk-column-publisher{
+  padding: 10px 20px;
+  p{
+    &:first-child{
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.spacer-10{
+  height: 10px;
+}
+
+.mat-form-field-wrapper{
+  padding: 20px 0px;
+}

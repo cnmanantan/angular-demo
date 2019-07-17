@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LandingPageModule } from '@landing/landing-page.module';
+import { DashboardModule } from '@dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LandingPageModule } from '@landing/landing-page.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LandingPageModule
+    LandingPageModule,
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
