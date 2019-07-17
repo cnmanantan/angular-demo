@@ -24,7 +24,9 @@
       "@landing/*": ["app/landing-page/*"],
       "@dashboard/*": ["app/dashboard/*"],
       "@models/*": ["app/models/*"],
-      "@services/*" : ["app/services/*"]
+      "@services/*" : ["app/services/*"],
+      "@directives/*" : ["app/directives-page/*"],
+      "@shared/*" : ["app/shared/*"]
     }
   },
   "angularCompilerOptions": {
