@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, SimpleChange } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { Item, DataSourceItem, DataSourceInterface } from '@app/models/items';
@@ -9,8 +9,8 @@ import { Item, DataSourceItem, DataSourceInterface } from '@app/models/items';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-  @Input() items : Array<DataSourceItem> = [];
-  @Input() displayedColumns : Array<string> = [];
+  @Input() items: Array<DataSourceItem> = [];
+  @Input() displayedColumns: Array<string> = [];
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
@@ -20,9 +20,9 @@ export class TableComponent implements OnInit {
 
   ngOnInit() { }
 
-  ngOnChanges(simpleChange: any){
-    if(simpleChange && simpleChange.items){
-      this.dataSource.data = simpleChange.items.currentValue;
+  ngOnChanges(simpleChange: SimpleChange) {
+    if(simpleChange && simpleChange['items'] && simpleChange['items'].currentValue) {
+      this.dataSource.data = simpleChange['items'].currentValue;
       this.dataSource.sort = this.sort;
     }
   }
