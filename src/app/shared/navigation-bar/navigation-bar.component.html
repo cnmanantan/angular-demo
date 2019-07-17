@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>
+      <a routerLink="/">Perx - Angular Interview Test</a>
+    </h1>
+    <span class="example-fill-remaining-space"></span>
+    <div class="menu-item">
+      <button mat-button [matMenuTriggerFor]="menu">Links</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/dashboard">Dashboard</button>
+        <button mat-menu-item routerLink="/directives">Directive Page</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
