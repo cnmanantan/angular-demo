@@ -1,0 +1,20 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="container">
+  <div class="row">
+    <div *ngIf="!showDirective">
+      <p>Highlight Me</p>
+      <h1>This is heading text...</h1>
+    </div>
+    <div *ngIf="showDirective">
+      <p highlight-text>Highlight Me</p>
+      <h1 app-heading-text>This is heading text...</h1>
+    </div>
+  </div>
+  <div class="row">
+    <button (click)="toggleDirectiveDisplay()">
+      <span *ngIf="!showDirective">Apply Directives</span>
+      <span *ngIf="showDirective">Remove Directives</span>
+    </button>
+  </div>
+
+</div>
