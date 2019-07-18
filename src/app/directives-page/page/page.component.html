@@ -4,10 +4,18 @@
     <div *ngIf="!showDirective">
       <p>Highlight Me</p>
       <h1>This is heading text...</h1>
+      <div>
+        <h1>Heading Text</h1>
+        <p>Sub title text</p>
+      </div>
     </div>
     <div *ngIf="showDirective">
       <p highlight-text>Highlight Me</p>
       <h1 app-heading-text>This is heading text...</h1>
+      <div app-heading-wrapper>
+        <h1>Heading Text</h1>
+        <p>Sub title text</p>
+      </div>
     </div>
   </div>
   <div class="row">

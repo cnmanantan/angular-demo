@@ -5,7 +5,7 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class HeadingTextDirective {
 
-  constructor(private el: ElementRef) { console.log(el)
+  constructor(private el: ElementRef) {
     el.nativeElement.style.fontSize = "36px";
     el.nativeElement.style.fontWeight = "700";
     el.nativeElement.style.textTransform = "uppercase";
