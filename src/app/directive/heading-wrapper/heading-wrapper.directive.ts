@@ -14,8 +14,10 @@ export class HeadingWrapperDirective {
 
       h1.style.color = "#212121";
       h1.style.textTransform = "uppercase";
+      h1.style.fontSize = "3.5rem";
       p.style.color = "#424242";
       p.style.fontStyle = "italic";
+      p.style.fontSize = "1.5rem";
     }, 300);
   }
 
